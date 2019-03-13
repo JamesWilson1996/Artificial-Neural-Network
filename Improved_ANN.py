@@ -111,6 +111,10 @@ Test_Accuracy = (cm[0, 0] + cm[1, 1]) / 2000
 
 # Part 4 - Evaluating, Improving and Tuning
 
+"""
+Evaluate the accuracy of the network
+"""
+
 # Evaluating
 import keras
 from keras.models import Sequential
@@ -140,6 +144,12 @@ mean = accuracies.mean()
 var = accuracies.std()
     
 # Tuning the ANN
+
+"""
+Network will test different parameters based on those declared within the parameters function
+and will return the parameters that yield the highest accuracy.
+"""
+
 import keras
 from keras.models import Sequential
 from keras.layers import Dense
